@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Not Twitter</title>
+</head>
+
+<body>
+  <div class="header">
+    <div>
+      <img class="logo" src="/images/logo.png">
+    </div>
+    <div class="title">
+      <!-- <h2>CS 260</h2> -->
+      <h1>Not Twitter</h1>
+    </div>
+  </div>
+  <div id="app" class="content">
+    
+      <div class="image post card">
+          
+          <div class="form create-post-container">
+            <input class="username-input" v-model="username" placeholder="Username">
+            <textarea class="message-input" v-model="message" placeholder="Message"></textarea>
+            <button @click="createPost" class="post-button">{{button_text}}</button>
+            
+          </div>
+          
+              
+        </div>
+    <section >
+      
+      <div class="image" v-for="(post, index) in posts">
+        <div class="post card">
+          
+            <!-- <div v-if="post.editing" class="edit-post">
+                <div class="form edit-post-container">
+                    <input class="username-input" v-model="username" placeholder="Username">
+                    <textarea class="message-input" v-model="message" placeholder="Message"></textarea>
+                    <button @click="createPost" class="post-button">Post</button>
+                    
+                  </div>
+            </div> -->
+            <div class="post-content">
+              <div class="username">{{post.username}}</div>
+        <!-- <img :src="item.path" /> -->
+            <div class="description">{{post.message}}</div>
+            
+            
+            
+            </div>
+            
+            <div class="controls-container">
+                <button @click="startEditing(post)">Edit</button>
+                <button @click="likePost(post)">Like <span class="like">{{post.like_count}}</span></button>
+                <button @click="deletePost(post)">Delete</button>
+                
+            </div>
+            
+          
+        </div>
+        
+      </div>
+  </div>
+  <div class="footer">
+    <a href="/admin.html">Admin</a>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.7/vue.js" integrity="sha256-g+Q8DFAmG5+eyRPSydX0LY4TfjsL11XSDrIGerbbEdA=" crossorigin="anonymous"></script>
+  <script src="/script.js"></script>
+</body>
+<footer>
+  <a id="github_link" href="https://github.com/BYU-CS-260-Winter-2019/lab-4-jlund24">
+    <img class="github_image" src="images/GitHubMark.png"/>
+    <img class="github_image" src="images/GitHubLogo.png"/>
+    
+  </a>
+</footer>
+</html>

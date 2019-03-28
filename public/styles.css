@@ -1,0 +1,268 @@
+.logo {
+  max-width: 75px;
+  max-height: 75px;
+  margin: 10px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  background: #eeeeee;
+  padding: 0px;
+  margin: 0px;
+}
+
+.post {
+  background: white;
+}
+
+.description {
+  font-style: normal;
+}
+
+#github_link {
+  display: flex;
+  flex-flow: row nowrap;
+  
+}
+
+.github_image{
+  max-height: 30px;
+
+}
+
+footer {
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  padding: 20px 100px 0px 100px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+
+.username {
+  color: blue;
+  font-weight: bold;
+}
+
+/* .title {
+  margin-top: 10px;
+}
+
+.title h1, .title h2 {
+  margin: 0px;
+} */
+
+/* .title h1 {
+  border-top: 1px solid #000;
+} */
+
+/* Footer */
+.footer {
+  height: 50px;
+  padding: 20px 100px 0px 100px;
+}
+
+.footer a {
+  color: #000;
+}
+
+/* Content */
+.content {
+  padding: 20px 100px 0px 100px;
+}
+
+.image h2 {
+  /* font-style: italic; */
+  font-size: 1em;
+}
+
+/* Admin */
+.heading {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.heading h2 {
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.add, .edit {
+  display: flex;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
+
+/* Form */
+input, textarea, select, button {
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+}
+
+.form {
+  margin-right: 50px;
+}
+
+/* Uploaded images */
+.upload h2 {
+  margin: 0px;
+}
+
+.upload img {
+  max-width: 300px;
+}
+
+/* Suggestions */
+.suggestions {
+  width: 200px;
+  border: 1px solid #ccc;
+}
+
+.suggestion {
+  min-height: 20px;
+}
+
+.suggestion:hover {
+  background-color: #5BDEFF;
+  color: #fff;
+}
+
+/* Masonry */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* .image-gallery {
+  column-gap: 1.5em;
+} */
+
+.image {
+  margin: 0 0 1.5em;
+  display: inline-block;
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.controls-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+/* Masonry on large screens */
+/* @media only screen and (min-width: 1024px) {
+  .image-gallery {
+    column-count: 4;
+  }
+}
+
+/* Masonry on medium-sized screens */
+/* @media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .image-gallery {
+    column-count: 3;
+  }
+} */
+
+/* Masonry on small screens */
+/* @media only screen and (max-width: 767px) and (min-width: 540px) {
+  .image-gallery {
+    column-count: 2;
+  }
+} */ 
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 7px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.post {
+  padding: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  
+  justify-content: space-between;
+}
+
+.post-content {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+button {
+  height: 25px;
+  
+}
+
+.create-post-container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.edit-post-container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.edit-post {
+  width: 75%;
+}
+
+.message-input {
+  width: 100%;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.username-input {
+  width: 25%;
+  margin-bottom: 10px;
+}
+
+.post-button {
+  min-width: 50px;
+  max-width: 150px;
+}
+
+.like {
+  background: rgb(47, 47, 241);
+  color: white;
+  padding: 2px;
+  border-radius: 5px;
+}
